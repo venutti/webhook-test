@@ -10,8 +10,23 @@ export class AppController {
     console.log('GET');
   }
 
-  @Post()
-  post(@Body() body) {
-    console.log('POST', body);
+  @Post('/api/stellar/create')
+  create(@Body() body) {
+    console.log('CREATE', body);
+  }
+
+  @Post('/api/stellar/confirm')
+  confirm(@Body() body) {
+    console.log('CONFIRM', body);
+  }
+
+  @Post('/api/stellar/consolidate')
+  consolidate(@Body() body) {
+    console.log('CONSOLIDATE', body);
+  }
+
+  @Post('/api/stellar/deliver')
+  deliver(@Body() body) {
+    console.log('DELIVER', body);
   }
 }
