@@ -28,5 +28,6 @@ export class AppController {
   @Post('/api/stellar/deliver')
   deliver(@Body() body) {
     console.log('DELIVER', body);
+    throw new Error();
   }
 }
